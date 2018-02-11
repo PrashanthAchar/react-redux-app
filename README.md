@@ -4,7 +4,7 @@ My First application on React Redux Framework
 ##Installation
 > Steps for React setup
 * npm install --save react react-dom
-* npm install --save webpack webpack-dev-server
+* npm install --save -g webpack webpack-dev-server
 * npm install --save-dev babel-cli babel-core babel-loader babel-plugin-transform-object-rest-spread babel-preset-es2015 babel-preset-react babel-preset-stage-0 babel-register
 * Add babel configuration in package.json
 ```
@@ -75,3 +75,9 @@ module.exports = {
     "dev" : "webpack-dev-server --config webpack.config.js"
   },
 ```
+
+> Steps for setting up Redux
+
+* Install redux and react-redux.
+`npm install --save redux react-redux redux-thunk`
+* Install react-router-dom

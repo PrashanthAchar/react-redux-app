@@ -1,6 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/App.jsx';
+import {Provider} from 'react-redux';
+import store from './store';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+//import App from './containers/App.jsx';
+import AppRoutes from './routes'
+
+ReactDOM.render(
+    <Provider store={store}>
+        <AppRoutes />
+    </Provider>,
+    document.getElementById('app')
+);
